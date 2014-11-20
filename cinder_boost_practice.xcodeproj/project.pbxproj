@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC49A7D71A1E1432007ADDD3 /* boost_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */; };
 		EC810FAE1A1DF3F40025510A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC810FAD1A1DF3F40025510A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boost_example.cpp; sourceTree = "<group>"; };
+		EC49A7D61A1E1432007ADDD3 /* boost_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boost_example.h; sourceTree = "<group>"; };
 		EC810FAA1A1DF3F40025510A /* cinder_boost_practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cinder_boost_practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC810FAD1A1DF3F40025510A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				EC810FAD1A1DF3F40025510A /* main.cpp */,
+				EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */,
+				EC49A7D61A1E1432007ADDD3 /* boost_example.h */,
 			);
 			path = cinder_boost_practice;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC49A7D71A1E1432007ADDD3 /* boost_example.cpp in Sources */,
 				EC810FAE1A1DF3F40025510A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +244,7 @@
 				EC810FB31A1DF3F40025510A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
