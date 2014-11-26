@@ -1,9 +1,17 @@
-### Cinder 0.8.6: [libcinder.org](http://libcinder.org)
+Cinder Boost Practice
+=====================
 
-**Cinder is a peer-reviewed, free, open source C++ library for creative coding.**
+Personal playground of C++, boost, cinder
+with xcode on Mac.
 
-To get started with Cinder from GitHub, please read this [git setup document](http://libcinder.org/docs/welcome/GitSetup.html). You might also prefer one of our [pre-packaged downloads](http://libcinder.org/download/).
+#Boost
+1. git clone (boost rep)
+2. Make sure /usr/local/Cellar/boost exists.
 
-Cinder supports Mac OS X, Windows and iOS. It requires Xcode 4.4 or later for development on the Mac, and Visual C++ 2012 or later on Windows.
+#XCode
+1. Start xcode, create "command line tool" cpp file.
+2. At project setup, add usr/local/Cellar/boost/(boost version)/include and usr/local/Cellar/boost/(boost version)/lib to targes -> search paths -> header search paths.
 
-Cinder is released under the Modified BSD License. Please read the [welcome document](Welcome.html) for more information.
+#Cinder
+1. git clone (cinder rep)
+2. copy boost at Cinder/boost (initally empty). (ex cp -r /usr/local/Cellar/boost/1.56.0/ boost/)
