@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC49A7D71A1E1432007ADDD3 /* boost_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */; };
+		EC49A7DB1A25A803007ADDD3 /* cinder_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC49A7D91A25A803007ADDD3 /* cinder_example.cpp */; };
 		EC810FAE1A1DF3F40025510A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC810FAD1A1DF3F40025510A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,10 @@
 /* Begin PBXFileReference section */
 		EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boost_example.cpp; sourceTree = "<group>"; };
 		EC49A7D61A1E1432007ADDD3 /* boost_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boost_example.h; sourceTree = "<group>"; };
+		EC49A7D91A25A803007ADDD3 /* cinder_example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cinder_example.cpp; sourceTree = "<group>"; };
+		EC49A7DA1A25A803007ADDD3 /* cinder_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cinder_example.h; sourceTree = "<group>"; };
+		EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EC810FAA1A1DF3F40025510A /* cinder_boost_practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cinder_boost_practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC810FAD1A1DF3F40025510A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +49,8 @@
 		EC810FA11A1DF3F40025510A = {
 			isa = PBXGroup;
 			children = (
+				EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */,
+				EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */,
 				EC810FAC1A1DF3F40025510A /* cinder_boost_practice */,
 				EC810FAB1A1DF3F40025510A /* Products */,
 			);
@@ -63,6 +70,8 @@
 				EC810FAD1A1DF3F40025510A /* main.cpp */,
 				EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */,
 				EC49A7D61A1E1432007ADDD3 /* boost_example.h */,
+				EC49A7D91A25A803007ADDD3 /* cinder_example.cpp */,
+				EC49A7DA1A25A803007ADDD3 /* cinder_example.h */,
 			);
 			path = cinder_boost_practice;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC49A7D71A1E1432007ADDD3 /* boost_example.cpp in Sources */,
+				EC49A7DB1A25A803007ADDD3 /* cinder_example.cpp in Sources */,
 				EC810FAE1A1DF3F40025510A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,9 +174,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./Cinder/include,
+				);
+				LIBRARY_SEARCH_PATHS = ./Cinder/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = /usr/local/Cellar/boost/1.56.0/lib/libboost_system.a;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -199,6 +216,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./Cinder/include,
+				);
+				LIBRARY_SEARCH_PATHS = ./Cinder/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -212,7 +235,6 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/Cellar/boost/1.56.0/include,
-					/usr/local/Cellar/boost/1.56.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
