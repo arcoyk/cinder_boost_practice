@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		EC49A7D71A1E1432007ADDD3 /* boost_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC49A7D51A1E1432007ADDD3 /* boost_example.cpp */; };
 		EC49A7DB1A25A803007ADDD3 /* cinder_example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC49A7D91A25A803007ADDD3 /* cinder_example.cpp */; };
+		EC49A7E41A283323007ADDD3 /* libcinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7E31A283323007ADDD3 /* libcinder.a */; };
+		EC49A7E81A283481007ADDD3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7E51A283481007ADDD3 /* Accelerate.framework */; };
+		EC49A7E91A283481007ADDD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7E61A283481007ADDD3 /* AudioToolbox.framework */; };
+		EC49A7EA1A283481007ADDD3 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7E71A283481007ADDD3 /* AudioUnit.framework */; };
+		EC49A7EC1A283486007ADDD3 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7EB1A283486007ADDD3 /* QTKit.framework */; };
+		EC49A7ED1A28348C007ADDD3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */; };
+		EC49A7EE1A28348C007ADDD3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */; };
+		EC49A7F11A28349D007ADDD3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7EF1A28349D007ADDD3 /* CoreAudio.framework */; };
+		EC49A7F21A28349D007ADDD3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC49A7F01A28349D007ADDD3 /* CoreVideo.framework */; };
 		EC810FAE1A1DF3F40025510A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC810FAD1A1DF3F40025510A /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +40,13 @@
 		EC49A7DA1A25A803007ADDD3 /* cinder_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cinder_example.h; sourceTree = "<group>"; };
 		EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EC49A7E31A283323007ADDD3 /* libcinder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder.a; path = Cinder/lib/libcinder.a; sourceTree = "<group>"; };
+		EC49A7E51A283481007ADDD3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EC49A7E61A283481007ADDD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EC49A7E71A283481007ADDD3 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		EC49A7EB1A283486007ADDD3 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		EC49A7EF1A28349D007ADDD3 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EC49A7F01A28349D007ADDD3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		EC810FAA1A1DF3F40025510A /* cinder_boost_practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cinder_boost_practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC810FAD1A1DF3F40025510A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +56,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC49A7F11A28349D007ADDD3 /* CoreAudio.framework in Frameworks */,
+				EC49A7F21A28349D007ADDD3 /* CoreVideo.framework in Frameworks */,
+				EC49A7EC1A283486007ADDD3 /* QTKit.framework in Frameworks */,
+				EC49A7ED1A28348C007ADDD3 /* Cocoa.framework in Frameworks */,
+				EC49A7EE1A28348C007ADDD3 /* OpenGL.framework in Frameworks */,
+				EC49A7E81A283481007ADDD3 /* Accelerate.framework in Frameworks */,
+				EC49A7E91A283481007ADDD3 /* AudioToolbox.framework in Frameworks */,
+				EC49A7EA1A283481007ADDD3 /* AudioUnit.framework in Frameworks */,
+				EC49A7E41A283323007ADDD3 /* libcinder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +74,13 @@
 		EC810FA11A1DF3F40025510A = {
 			isa = PBXGroup;
 			children = (
+				EC49A7EF1A28349D007ADDD3 /* CoreAudio.framework */,
+				EC49A7F01A28349D007ADDD3 /* CoreVideo.framework */,
+				EC49A7EB1A283486007ADDD3 /* QTKit.framework */,
+				EC49A7E51A283481007ADDD3 /* Accelerate.framework */,
+				EC49A7E61A283481007ADDD3 /* AudioToolbox.framework */,
+				EC49A7E71A283481007ADDD3 /* AudioUnit.framework */,
+				EC49A7E31A283323007ADDD3 /* libcinder.a */,
 				EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */,
 				EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */,
 				EC810FAC1A1DF3F40025510A /* cinder_boost_practice */,
@@ -183,7 +215,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = /usr/local/Cellar/boost/1.56.0/lib/libboost_system.a;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -236,6 +267,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/Cellar/boost/1.56.0/include,
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cinder/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +278,10 @@
 		EC810FB31A1DF3F40025510A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cinder/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
