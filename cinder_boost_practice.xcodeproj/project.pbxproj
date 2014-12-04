@@ -71,7 +71,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC810FA11A1DF3F40025510A = {
+		EC49A7F31A2835EA007ADDD3 /* framework */ = {
 			isa = PBXGroup;
 			children = (
 				EC49A7EF1A28349D007ADDD3 /* CoreAudio.framework */,
@@ -83,6 +83,14 @@
 				EC49A7E31A283323007ADDD3 /* libcinder.a */,
 				EC49A7E01A27FC0B007ADDD3 /* Cocoa.framework */,
 				EC49A7DE1A27FBC2007ADDD3 /* OpenGL.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		EC810FA11A1DF3F40025510A = {
+			isa = PBXGroup;
+			children = (
+				EC49A7F31A2835EA007ADDD3 /* framework */,
 				EC810FAC1A1DF3F40025510A /* cinder_boost_practice */,
 				EC810FAB1A1DF3F40025510A /* Products */,
 			);

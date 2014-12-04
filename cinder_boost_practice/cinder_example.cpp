@@ -8,26 +8,16 @@
 
 #include "cinder_example.h"
 
-#include "cinder/app/AppBasic.h"
-#include "cinder/gl/gl.h"
-
-class CinderExample : public cinder::app::AppBasic {
-  public:
-  void setup();
-  void mouseDown(cinder::app::MouseEvent event);
-  void update();
-  void draw();
-};
+CinderExample::CinderExample() {
+}
 
 void CinderExample::setup() {
 }
 
 void CinderExample::mouseDown(cinder::app::MouseEvent event) {
-
 }
 
 void CinderExample::update() {
-
 }
 
 void CinderExample::draw() {
