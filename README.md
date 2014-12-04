@@ -1,21 +1,19 @@
-cinder_boost_practice
+Cinder Boost Practice
 =====================
 
-Playground of C++, boost, cinder etc
-with xcode on Mac from clone to IDE setup.
+Personal playground of C++, boost, cinder
+with xcode on Mac.
 
-Get Started
-=====================
+#Boost
+1. git clone (boost rep)
+2. Make sure /usr/local/Cellar/boost exists.
 
-Boost
-=====================
-git clone (boost rep)
-check if /usr/local/Cellar/boost exists.
+#XCode
+1. Start xcode, create "command line tool" cpp file.
+2. At project setup, add /usr/local/Cellar/boost/(boost version)/include and /usr/local/Cellar/boost/(boost version)/lib to targes -> search paths -> header search paths.
 
-XCode
-=====================
-create (command line tool) cpp file.
-add (usr/local/Cellar/boost/(boost_version)/include) and (usr/local/Cellar/boost/(boost_version)/lib) to targets -> search paths -> header search paths
+#Cinder
+1. git clone (cinder rep)
+2. Open Cinder/xcode/cinder.xcodeproj, add /usr/local/Cellar/boost/(boost version)/include to cinder -> search paths -> header search paths.
+3. ./fullbuid.sh (at Cinder/xcode/)
 
-Cinder
-=====================
