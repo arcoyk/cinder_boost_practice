@@ -1,10 +1,3 @@
-//
-//  cinder_example.cpp
-//  cinder_boost_practice
-//
-//  Created by Kita Yui on 2014/11/26.
-//  Copyright (c) 2014年 takram. All rights reserved.
-//
 
 #include "cinder_example.h"
 

@@ -10,5 +10,5 @@ int main ()
 {
   yui::BoostExample example = yui::BoostExample();
   CinderExample c_example = CinderExample();
-  // c_example.draw();
+  c_example.draw();
 }
